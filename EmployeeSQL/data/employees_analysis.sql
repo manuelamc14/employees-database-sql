@@ -24,7 +24,11 @@ ORDER BY hire_date DESC;
 
 SELECT managers.dept_no,
 departments.dept_name,
-managers.emp_no
+managers.emp_no,
+employees.first_name,
+employees.last_name
 FROM managers
 INNER JOIN departments ON
-managers.dept_no = departments.dept_no;
+managers.dept_no = departments.dept_no
+INNER JOIN employees ON
+managers.emp_no = employees.emp_no
