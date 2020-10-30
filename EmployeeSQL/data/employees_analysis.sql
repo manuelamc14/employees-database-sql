@@ -78,5 +78,13 @@ employees_by_dep.dept_no = departments.dept_no
 WHERE employees_by_dep.dept_no in ('d007','d005')
 ORDER BY emp_no
 
+-- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+SELECT employees.last_name AS "Last Name", 
+COUNT(employees.last_name) AS "Last Name Count"
+FROM employees
+GROUP BY last_name
+ORDER BY "Last Name Count" DESC
+
+
 
 
