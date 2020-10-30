@@ -63,3 +63,20 @@ employees_by_dep.emp_no = employees.emp_no
 INNER JOIN departments ON
 employees_by_dep.dept_no = departments.dept_no
 WHERE employees_by_dep.dept_no = 'd007'
+
+--7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+SELECT employees_by_dep.emp_no,
+employees.last_name,
+employees.first_name,
+departments.dept_name
+FROM employees_by_dep
+INNER JOIN employees ON
+employees_by_dep.emp_no = employees.emp_no
+INNER JOIN departments ON
+employees_by_dep.dept_no = departments.dept_no
+WHERE employees_by_dep.dept_no in ('d007','d005')
+ORDER BY emp_no
+
+
+
