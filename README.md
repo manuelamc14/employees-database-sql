@@ -9,7 +9,7 @@ The project's aim is to create a database for the employees information of a com
 5. Salaries: It includes the employee id and the salary.
 6. Titles: it includes the title name and the title id. 
 
-Please see below the ERD use to establish the table schema:
+Please see below the ERD used to establish the table schema:
 
 ![alt text](https://github.com/manuelamc14/employees-database-sql/blob/main/EmployeeSQL/employees_erd.png?raw=true)
 
