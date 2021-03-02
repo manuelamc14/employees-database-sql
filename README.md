@@ -1,5 +1,12 @@
 # employees-database-sql
 
+## Technologies
+
+* SQL
+* Pandas
+
+## Description
+
 The project's aim is to create a database for the employees information of a company. The database is integrated by six tables.
 
 1. Departments : It includes the name and the id departments.
@@ -9,9 +16,6 @@ The project's aim is to create a database for the employees information of a com
 5. Salaries: It includes the employee id and the salary.
 6. Titles: it includes the title name and the title id. 
 
-Please see below the ERD used to establish the table schema:
-
-![alt text](https://github.com/manuelamc14/employees-database-sql/blob/main/EmployeeSQL/employees_erd.png?raw=true)
 
 After the database was created the following queries were run to test the database. 
 
@@ -23,3 +27,30 @@ After the database was created the following queries were run to test the databa
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
+Also the database was connected to Jupyter Notebook so we can access to the information throught Pandas.
+
+## Instructions
+
+* Import "employees_table_schema.sql" file to create the database structure. Please see below the ERD used to establish the table schema:
+
+![alt text](https://github.com/manuelamc14/employees-database-sql/blob/main/EmployeeSQL/employees_erd.png?raw=true)
+
+* Import "employees_queries.sql" to run the queries mentioned above.
+
+* To connect the database to jupyter notebook:
+
+   1. Replace the username and password in "config.py" 
+   
+   ![ScreenShot](https://github.com/manuelamc14/employees-database-sql/blob/main/Images/config.png)
+   
+   2. Run "sql_pandas" notebook
+   
+   ![ScreenShot](https://github.com/manuelamc14/employees-database-sql/blob/main/Images/engine.png)
+   
+   
+   
+
+
+
+
